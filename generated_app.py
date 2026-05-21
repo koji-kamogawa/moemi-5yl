@@ -177,7 +177,7 @@ if st.session_state.generate:
         )
         with st.spinner("物語を生成中..."):
             response = client.chat.completions.create(
-                model="deepseek-chat",
+                model="deepseek-v4-flash",
                 messages=[
                     {"role": "system", "content": "あなたは優秀な作家です。"},
                     {"role": "user", "content": prompt}
